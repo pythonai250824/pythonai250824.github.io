@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Diagrams and Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .diagram, .code, .description {
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            width: 80%;
+            background-color: #f9f9f9;
+        }
+        .diagram img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            background-color: #e0f7fa;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python summary 2:</h1>
+
+        <h2>multiple 2 numbers</h2>
+        <div class="diagram">
+            <img src="ai_6.drawio.png" alt="Diagram 6">
+        </div>
+        <div class="code">
+            <h3>Python Program</h3>
+            <pre>
+                <code>
+# Start
+
+x: int = int(input("what is x?"))
+y: int = int(input("what is y?"))
+print("x * y =", x * y)
+
+# End
+                </code>
+            </pre>
+        </div>
+        <div class="description">
+            <p>This program multiplies two integers input by the user and prints the result.</p>
+        </div>
+
+        <h2>diff floats</h2>
+        <div class="diagram">
+            <img src="ai_7.drawio.png" alt="Diagram 7">
+        </div>
+        <div class="code">
+            <h3>Python Program</h3>
+            <pre>
+                <code>
+# Start
+
+x: float = float(input("what is x?"))
+y: float = float(input("what is y?"))
+print("x - y =", x - y)
+
+# End
+                </code>
+            </pre>
+        </div>
+        <div class="description">
+            <p>This program subtracts the second float input by the user from the first and prints the result.</p>
+        </div>
+
+        <h2>string concat</h2>
+        <div class="diagram">
+            <img src="ai_8.drawio.png" alt="Diagram 8">
+        </div>
+        <div class="code">
+            <h3>Python Program</h3>
+            <pre>
+                <code>
+# Start
+
+fname: str = input("what is your first-name?")
+lname: str = input("what is your last-name?")
+print(fname + " " + lname + ".")
+
+# End
+                </code>
+            </pre>
+        </div>
+        <div class="description">
+            <p>This program concatenates the user's first name and last name, adding a space in between, and prints the result.</p>
+        </div>
+
+        <h2>if-else</h2>
+        <div class="diagram">
+            <img src="ai_9.drawio.png" alt="Diagram 9">
+        </div>
+        <div class="code">
+            <h3>Python Program</h3>
+            <pre>
+                <code>
+## Start
+
+x: float = float(input("enter a number:"))
+
+if x > 0:
+    print("Positive")
+    #if you want to write nothing -- pass
+else:
+    print("Negative or zero")
+
+## End
+                </code>
+            </pre>
+        </div>
+        <div class="description">
+            <p>This program checks if the number input by the user is positive, negative, or zero, and prints the corresponding message.</p>
+        </div>
+
+        <h2>if-else-pass-const</h2>
+        <div class="diagram">
+            <img src="ai_10.drawio.png" alt="Diagram 10">
+        </div>
+        <div class="code">
+            <h3>Python Program</h3>
+            <pre>
+                <code>
+## Start
+
+pwd: str = input("what's the password?");
+
+if pwd == "python1234":
+    print("correct! you are in!");
+else:
+    print("wrong! out you go ...");
+
+## End
+
+# Bonus:
+
+## Tip: look at this way of checking--
+
+PASSWORD: str = "python1234"
+if not (pwd == PASSWORD):
+    print("correct! you are in!");
+else:
+    print("wrong! out you go ...");
+                </code>
+            </pre>
+        </div>
+        <div class="description">
+            <p>This program checks if the input password matches "python1234" and prints a corresponding message.</p>
+            <p>Bonus: An alternative way to check the password, where the correct and wrong messages are swapped due to the 'not' operator.</p>
+        </div>
+    </div>
+</body>
+</html>
